@@ -5,6 +5,8 @@ html{
  display: flex;
  align-items: center;
  justify-content: center;
+ text-shadow: 1px 1px 2px #4aff83;
+ 
 }
 
 .container{
@@ -16,7 +18,7 @@ html{
  width: 400px;
  padding: 10px;
  background-color: #AA96DA;
- border: black 2px solid;
+ border: black 1px solid;
  border-radius: 3%;
  box-shadow: 10px 20px 3px #757575;
  text-align: center;
@@ -26,7 +28,7 @@ html{
  height: 100px;
  width: 100%;
  background-color: #FFFFD2;
- border: black 2px solid;
+ border: black 1px solid;
  text-align: end;
  font-size: 3rem;
  font-weight: bolder;
@@ -39,19 +41,21 @@ html{
 .row{
  display: flex;
  gap: 5px;
- justify-content: space-around;
+ justify-content: space-between;
  width: 100%;
 }
 
 button{
  padding: 5px;
- height: 70px;
- width: 140px;
+ height: 80px;
+ width: 100px;
  background: #FFFFD2;
  color: black;
- border-radius: 20% 30%;
+ text-shadow: 1px 1px 2px #4aff83;
+ border-radius: 3%;
  font-weight: bold;
  border: 1px black solid;
+ border-radius: 10%;
  letter-spacing: 4px;
  overflow: hidden;
  transition: 0.5s;
@@ -59,11 +63,9 @@ button{
  font-size: 1.5rem;
  box-shadow: 3px 5px 2px #757575;
 }
- 
 
-
-#zero{
- flex-grow: 1;
+#equals{
+ width: 205px;
 }
 
 button:hover {
