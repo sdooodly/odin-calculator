@@ -112,3 +112,37 @@ button:hover {
 #equals {
   width: 205px;
 }
+@media (max-width: 768px) {
+ .container {
+  height: 300px;
+  width: 200px;
+  font-size: 0.5rem;
+  box-shadow: 5px 10px 1.5px #757575;
+}
+.displayDiv {
+  height: 50px;
+  font-size: 1rem;
+}
+
+.row {
+  gap: 2.5px;
+}
+
+button {
+  padding: 2.5px;
+  height: 40px;
+  width: 50px;
+  border: 0.5px black solid;
+  font-size: 1rem;
+  box-shadow: 1px 1px 0px #757575;
+}
+
+button:hover {
+  box-shadow: 0 0 10px #c5fad5;
+}
+
+#equals {
+  width: 102.5px;
+}
+  
+}
