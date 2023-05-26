@@ -52,6 +52,7 @@ const operate = (num1, operator, num2) => {
 }
 
 // console.log('hello2')
+//console.log('testpr');
 // console.log(operate(1, '*', 25))
 // console.log(operate(1, '+', 25))
 // console.log(operate(1, '-', 25))
