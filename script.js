@@ -69,6 +69,7 @@ number.forEach((element) => {
     result.textContent = element.textContent;
     if(num1 == "") num1 = element.textContent;
     else num2 = element.textContent;    
+    numbersFunc(num1, num2);
   });
 })
 
@@ -76,10 +77,14 @@ operator.forEach((element) => {
   element.addEventListener("click", () => {
     console.log("click +/- gay"+ element.textContent);
     result.textContent = element.textContent;
-    operatorSign = element.textContent;   
+    operatorSign = element.textContent;  
+    operatorsFunc(operatorSign);
   });
 })
 
+const numbersFunc = (num1, num2) => {
+  const operator = operatorsFunc
+}
 //not this way, call operate when = is clicked
 
 // if(!(num1 == "") && !(num2 == "") && !(operatorSign == "")){
@@ -88,7 +93,7 @@ operator.forEach((element) => {
 
 equals.addEventListener("click", () => {
   console.log("click +/- gay");
-  const num1func
+  //const num1func
   const resultNumber = parseFloat(result.textContent);
   result.textContent = -Math.sign(resultNumber) * resultNumber;
 });
