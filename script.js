@@ -1,34 +1,9 @@
-// console.log('hello')
-// get all inputs linked
-//when equals is clicked, compute the things on screen
-//when
 const result = document.querySelector(".displayDiv");
-const number = document.querySelectorAll(".number");
-const operator = document.querySelectorAll(".operator");
 const concat = document.querySelectorAll(".concat");
 const AC = document.getElementById("AC");
 const plusOrMinus = document.getElementById("plusOrMinus");
-const percentage = document.getElementById("percentage");
-const divide = document.getElementById("divide");
-const seven = document.getElementById("seven");
-const eight = document.getElementById("eight");
-const nine = document.getElementById("nine");
-const multiply = document.getElementById("multiply");
-const four = document.getElementById("four");
-const five = document.getElementById("five");
-const six = document.getElementById("six");
-const subtract = document.getElementById("subtract");
-const one = document.getElementById("one");
-const two = document.getElementById("two");
-const three = document.getElementById("three");
-const add = document.getElementById("add");
-const zero = document.getElementById("zero");
 const dot = document.getElementById("dot");
 const equals = document.getElementById("equals");
-
-let num1 = "", num2 = "";
-let operatorSign;
-// console.log('hello0222')
 
 const toAdd = (num1, num2) => num1 + num2;
 const toSubtract = (num1, num2) => num1 - num2;
@@ -36,9 +11,7 @@ const toMultiply = (num1, num2) => num1 * num2;
 const toDivide = (num1, num2) => num1 / num2;
 const toCent = (num1, num2) => num1 % num2;
 
-
-const operate = (num1, operator, num2) => {
-  return operator == '+'
+const operate = (num1, operator, num2) => operator == '+'
     ? toAdd(num1, num2)
     : operator == '-'
     ? toSubtract(num1, num2)
@@ -49,14 +22,8 @@ const operate = (num1, operator, num2) => {
     : operator == '%'
     ? toCent(num1, num2)
     : 'error';
-}
 
-// console.log('hello2')
-//console.log('testpr');
 // console.log(operate(1, '*', 25))
-// console.log(operate(1, '+', 25))
-// console.log(operate(1, '-', 25))
-// console.log(operate(1, '/', 25))
 
 AC.addEventListener("click", () => {
   console.log("click AC gay");
