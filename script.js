@@ -1,4 +1,7 @@
 // console.log('hello')
+// get all inputs linked
+//when equals is clicked, compute the things on screen
+//when
 const result = document.querySelector(".displayDiv");
 const number = document.querySelectorAll(".number");
 const operator = document.querySelectorAll(".operator");
@@ -79,7 +82,13 @@ operator.forEach((element) => {
 
 //not this way, call operate when = is clicked
 
-if(!(num1 == "") && !(num2 == "") && !(operatorSign == "")){
-  operate(num1, operatorSign, num2)
-}
-//write comments
+// if(!(num1 == "") && !(num2 == "") && !(operatorSign == "")){
+//   operate(num1, operatorSign, num2)
+// }
+
+equals.addEventListener("click", () => {
+  console.log("click +/- gay");
+  const num1func
+  const resultNumber = parseFloat(result.textContent);
+  result.textContent = -Math.sign(resultNumber) * resultNumber;
+});
