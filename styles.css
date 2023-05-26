@@ -174,6 +174,13 @@ button:hover {
  button:hover {
    box-shadow: 0 0 10px #c5fad5;
  }
+
+ /*why isnt this working*/
+
+ button:active {
+  background-color: #aa96da;
+  box-shadow: 0 0 10px #aa96da;
+}
  
  #equals {
    width: 102.5px;
