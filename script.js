@@ -29,7 +29,7 @@ AC.addEventListener("click", () => {
   console.log("click AC gay");
   result.textContent = "";
   })
-//not working on subsequent clicks
+  
 plusOrMinus.addEventListener("click", () => {
     console.log("click +/- gay");
     const resultNumber = parseFloat(result.textContent);
