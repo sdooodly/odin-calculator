@@ -11,14 +11,20 @@ const toDivide = (num1, num2) => (num1 / num2).toFixed(2);
 const toCent = (num1, num2) => (num1 % num2).toFixed(2);
 
 const operate = (num1, operator, num2) => {
-  if (operator == '/' && num2 == '0') {
+  if (operator == '/' && num1 == '0' && num2 == '0') {
+    concat.forEach((con) => {
+      con.textContent = "Lost in Vogon poetry";
+      con.style.backgroundColor = 'black';
+      con.style.color = 'white';
+    });
+  elseif (operator == '/' && num2 == '0') {
     concat.forEach((con) => {
       con.textContent = "e42";
       con.style.backgroundColor = 'red';
       con.style.color = 'white';
     });
     return 'Beep boop, error 42';
-  } else {
+  }; else {
     return operator == '+'
       ? toAdd(num1, num2)
       : operator == '-'
@@ -36,8 +42,10 @@ const operate = (num1, operator, num2) => {
 
 AC.addEventListener("click", () => {
   result.textContent = "";
-  concat.forEach((button) => {
-    button.textContent = button.dataset.value;
+  concat.forEach((con) => {
+    con.textContent = con.dataset.value;
+    con.style.backgroundColor = '#ffffd2';
+    con.style.color = 'black';
   });
 });
 
