@@ -9,3 +9,6 @@
 - fix +- sign
 - fix /0
 - what does eval() do
+
+### 13 June 2023
+- just fix +/- issue. everthing else looks good. move on already.
